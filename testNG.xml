@@ -23,19 +23,8 @@
 <suite name="Suite_2">
 
     <test verbose="3" name="PurchasesTest" preserve-order="true" annotations="JDK" parallel="false">
-        <parameter name="logIn" value="standard_user"/>
-        <parameter name="password" value="secret_sauce"/>
         <classes>
-            <class name="tests.LogInTest"/>
-            <class name="tests.LogOutTest"/>
-            <class name="tests.PurchasesTest">
-            <methods>
-                <include name="countingGoodsCostTest"/>
-                <include name="purchaseCancellingTest"/>
-                <include name="purchaseTest"/>
-                <include name="removingFromCartTest"/>
-            </methods>
-            </class>
+            <class name="RunnerTest"/>
         </classes>
     </test>
 
